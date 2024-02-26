@@ -1,0 +1,12 @@
+suhu = int(input("Masukkan suhu tubuh: "))
+
+try:
+    suhu = int(suhu)
+    if suhu < 0:
+        print("Anda demam")
+    elif suhu >= 38:
+        print("suhu tidak boleh negatif") 
+    else:
+        print("suhu tubuh anda normal")
+except ValueError:
+    print("Input hanya menggunakan angka")
