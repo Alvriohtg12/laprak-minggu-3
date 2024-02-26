@@ -1,0 +1,6 @@
+try:
+  bilangan = int(input("Masukkan suatu bilangan: "))
+except ValueError:
+  print("Input hanya menggunakan angka.")
+else:
+  print("Positif" if bilangan > 0 else "Negatif" if bilangan < 0 else "Nol")
